@@ -10,6 +10,14 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
+.icon {
+    width: max-content;
+}
+
 :root {
     --primary-color: #02edb5;
 }
@@ -47,10 +55,12 @@ a:hover {
     color: var(--primary-color);
 }
 
-img {
+
+/* img {
+    display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 ::selection {
     background: #1F373D;
@@ -158,36 +168,41 @@ h1,
 .h1 {
     font-size: 58px;
     font-weight: 700;
+    color: #000000;
 }
 
 h2,
 .h2 {
     font-size: 40px;
     font-weight: 700;
+    color: #000000;
 }
 
 h3,
 .h3 {
     font-size: 40px;
     font-weight: 700;
+    color: #000000;
 }
 
 h4,
 .h4 {
     font-size: 25px;
     font-weight: 700;
+    color: #000000;
 }
 
 h5,
 .h5 {
     font-size: 14px;
     font-weight: 400;
-    color: #919EB1;
+    color: #000000;
 }
 
 h6,
 .h6 {
     font-size: 14px;
+    color: #000000;
 }
 
 p {
@@ -336,7 +351,7 @@ header nav {
     width: 88%;
     height: 630px;
     float: right;
-    background-image: url('../images/hero.png');
+    background-image: url('../images/hotel-4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -355,6 +370,10 @@ header nav {
     font-size: 18px;
     padding: 10px 20px;
     margin-top: 15px;
+}
+
+.hero-main-text {
+    color: #000000;
 }
 
 .info {
@@ -393,7 +412,8 @@ header nav {
 }
 
 .search-btn:hover {
-    background-color: rgb(255, 222, 89);
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -672,7 +692,7 @@ header nav {
     width: 100%;
     height: 630px;
     display: block;
-    background-image: url('../images/services.png');
+    background-image: url('../images/hotel-16.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -808,8 +828,17 @@ header nav {
 footer {
     background-color: #1F373D;
     width: 100%;
-    color: #fff;
+    color: #fff !important;
     padding: 65px 0px;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: #fff;
 }
 
 .footer-top {
@@ -823,6 +852,12 @@ footer {
     padding: 0px 15px;
     border: 0px;
     margin-top: 26px;
+}
+
+.footer-icon {
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
 }
 
 .newsletter-btn {
