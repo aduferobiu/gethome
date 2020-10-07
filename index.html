@@ -9,9 +9,12 @@
     <!-- Links -->
     <link rel="icon" type="image/png" href="images/GetHome logo_green icon.png" class="icon" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css 4.3.1/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
 
     <link href="css/style.css" rel="stylesheet" />
+
     <!-- Document Title -->
     <title>Gethome | Welcome to the world of Real Estate</title>
 </head>
@@ -19,11 +22,11 @@
 <body>
     <!------------------------------------------------ HEADER SECTION -->
     <header id="home">
-        <nav class="animate">
+        <nav class="animate" id="top-nav">
             <div class="container">
                 <div class="logo left">
                     <!-- Logo -->
-                    <a href="#home"><img src="./images/GetHome logo_green logo.png" alt="logo" style="max-width: 170px;height: auto;"></a>
+                    <a href="#home"><img src="./images/GetHome logo_white logo.png" alt="logo" style="max-width: 170px;height: auto;"></a>
                 </div>
                 <div class="menu-button hide right pointer">
                     <span></span>
@@ -41,282 +44,275 @@
                         <li><a href="#contact">Contact Us</a></li>
                     </div>
                     <div class="registration flex-center">
-                        <div class="join-us">
+                        <div class="Login">
                             <!-- Join Us Button -->
-                            <li class="pointer animate"><a href="#">Join Us</a></li>
+                            <li class="pointer animate"><a href="#">Login</a></li>
                         </div>
-                        <div class="getting-started">
+                        <div class="Register-with-us">
                             <!-- Get Started Button -->
-                            <li class="main-btn pointer text-center animate"><a href="#">Get Started</a></li>
+                            <li class="secondary-btn pointer text-center animate"><a class="secondary-text-color" href="#">Register</a></li>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="hero">
-            <div class="container">
-                <div class="hero-wrapper">
-                    <div class="title">
-                        <!-- Hero Title -->
-                        <h1 class="hero-main-text">Find Your New<br>Modern Apartment </h1>
-                        <div class="search lux-shadow">
-                            <!-- Search -->
-                            <input class="left" type="text" placeholder="Search Location">
-                            <button class="search-btn left">Search</button>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <div class="hero-image-info yellow-bg flex-center">
-                            <div class="info flex-center">
-                                <img src="images/call-icon.svg" alt="">
-                                <!-- Phone -->
-                                <p>(234) 7089-4567</p>
-                            </div>
-                            <div class="info flex-center">
-                                <img src="images/point-icon.svg" alt="">
-                                <!-- Place -->
-                                <p>Lagos,Nigeria</p>
+            <div class="hero-image">
+                <div class="hero-image-overlay">
+                    <div class="container">
+                        <div class="title">
+                            <!-- Hero Title -->
+                            <h1 class="hero-main-text">Find Your New<br>Modern Apartment </h1>
+                            <div class="search lux-shadow">
+                                <!-- Search -->
+                                <input class="left" type="text" placeholder="Search Location">
+                                <button class="search-btn left">Search</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="slide-down text-center pointer">
-                        <a href="#about">
-                            <p>Scroll Down</p>
-                            <img src="images/scroll.svg" alt="">
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </header>
+
+
     <!------------------------------------------------ STATISTIC SECTION -->
-    <section class="statistic" id="about">
-        <div class="container">
+    <section class="statistic py-5" id="about">
+        <div class="container mx-auto">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <h3>Our’s Company<br>Statistics</h3>
-                    <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on
-                        an octopus, yet due diligence.</p>
-                    <p>We need to get all stakeholders up to speed and in the right place hard stop, or technologically savvy or pre launch. Pro-sumer software commitment to the cause offline this discussion and wiggle room blue sky. Beef up teams were able
-                        to drive adoption and awareness. Screw the pooch killing it.</p>
+                <div class="col-md-6 col-lg-6 py-2">
+                    <h3>Our Company <br> Statistics</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium rerum omnis optio earum odit nesciunt! Eaque aut magni commodi eum. Iure distinctio adipisci quos cum facilis nemo voluptatibus error exercitationem odio perspiciatis!
+                        Necessitatibus, corrupti eum! Modi repellendus tempore saepe quod.</p>
                 </div>
-                <div class="col-12 col-lg-6 statistic-wrapper">
-                    <div class="statistic-box text-center">
-                        <p>3854</p>
-                        <p>Clients</p>
+                <div class="col-md-6 col-lg-6 py-2">
+                    <div class="row">
+                        <div class="statistic-box text-center">
+                            <h3>3243</h3>
+                            <p>Clients</p>
+                        </div>
+                        <div class="statistic-box text-center">
+                            <h3>3243</h3>
+                            <p>Accomodation</p>
+                        </div>
                     </div>
-                    <div class="statistic-box text-center">
-                        <p>748</p>
-                        <p>Appartments</p>
-                    </div>
-                    <div class="statistic-box text-center">
-                        <p>14</p>
-                        <p>Awards</p>
-                    </div>
-                    <div class="statistic-box text-center">
-                        <p>24</p>
-                        <p>Employees</p>
+                    <div class="row">
+                        <div class="statistic-box text-center">
+                            <h3>3243</h3>
+                            <p>People</p>
+                        </div>
+                        <div class="statistic-box text-center">
+                            <h3>3243</h3>
+                            <p>Happy</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <!------------------------------------------------ APPARTMENTS SECTION -->
-    <section id="appartments" class="appartments">
+    <section class="appartments">
         <div class="container">
-            <div class="row">
+            <div class="row py-3">
                 <div class="col-12">
-                    <h2>More Then 500+<br>Appartments For Rent</h2>
+                    <h3>More Then 500+<br>Appartments For Rent</h3>
                 </div>
             </div>
-            <div class="row">
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-2.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
+            <div class="appartmnt-container">
+                <div class="row">
+
+                    <!-- apparment 1 -->
+
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card bg-white p-2 appartment-box">
+                            <div class="card-img-top">
+                                <img src="./images/hotel-7.jpg" alt="" class="img-fluid">
                             </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
+                            <div class="card-body">
+                                <p class="appartment-highlight">Appartment</p>
+                                <h4 class="appartment-title"> Apartment 1</h4>
+                                <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                                <div class="appartment-details d-flex flex-row justify-content-between">
+                                    <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                    <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                    <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
                                 </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-1.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
-                                </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
+                                <div class="card-footer appartment-footer">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div>
+                                            <img src="./images/person1.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                        </div>
+                                        <p class="text-muted">Oct. 15th 2020</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-3.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
+
+                    <!-- appartment 2 -->
+
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card bg-white p-2 appartment-box">
+                            <div class="card-img-top">
+                                <img src="./images/hotel-8.jpg" alt="" class="img-fluid">
                             </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
+
+                            <div class="card-body">
+                                <p class="appartment-highlight">Appartment</p>
+                                <h4 class="appartment-title"> Apartment 2</h4>
+                                <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                                <div class="appartment-details d-flex flex-row justify-content-between">
+                                    <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                    <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                    <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
                                 </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-4.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
-                                </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
+
+                                <div class="card-footer appartment-footer">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div>
+                                            <img src="./images/person3.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                        </div>
+                                        <p class="text-muted">Oct. 14th 2020</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-5.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
+
+                    <!-- appartment 3 -->
+
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card bg-white p-2 appartment-box">
+                            <div class="card-img-top">
+                                <img src="./images/hotel-9.jpg" alt="" class="img-fluid">
                             </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
+                            <div class="card-body">
+                                <p class="appartment-highlight">Appartment</p>
+                                <h4 class="appartment-title"> Apartment 3</h4>
+                                <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                                <div class="appartment-details d-flex flex-row justify-content-between">
+                                    <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                    <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                    <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
                                 </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Appartment  -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Appartment Image  -->
-                            <img src="images/hotel-7.jpg" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Appartment Address  -->
-                                <p>Random Street, Apt B453, New York</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left">
-                                    <!-- Appartment Price  -->
-                                    <p>N3,500</p>
-                                </div>
-                                <div class="bedrooms right flex-center">
-                                    <img src="images/bed.svg" class="left" alt="">
-                                    <!-- Appartment Number Of Bedrooms  -->
-                                    <p class="left">2 BD</p>
-                                </div>
-                                <div class="bathrooms right flex-center">
-                                    <img src="images/shower.svg" class="left" alt="">
-                                    <!-- Appartment Number of Bathrooms  -->
-                                    <p class="left">2 BA</p>
+                                <!-- footer-for person -->
+                                <div class="card-footer appartment-footer">
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <div>
+                                            <img src="./images/person2.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                        </div>
+                                        <p class="text-muted">Oct. 13th 2020</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row py-4">
+
+                <!-- apparment 1 -->
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="card bg-white p-2 appartment-box">
+                        <div class="card-img-top">
+                            <img src="./images/hotel-7.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <p class="appartment-highlight">Appartment</p>
+                            <h4 class="appartment-title"> Apartment 1</h4>
+                            <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                            <div class="appartment-details d-flex flex-row justify-content-between">
+                                <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
+                            </div>
+                            <div class="card-footer appartment-footer">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./images/person1.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                    </div>
+                                    <p class="text-muted">Oct. 15th 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- appartment 2 -->
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="card bg-white p-2 appartment-box">
+                        <div class="card-img-top">
+                            <img src="./images/hotel-8.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <p class="appartment-highlight">Appartment</p>
+                            <h4 class="appartment-title"> Apartment 2</h4>
+                            <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                            <div class="appartment-details d-flex flex-row justify-content-between">
+                                <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
+                            </div>
+
+                            <div class="card-footer appartment-footer">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./images/person3.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                    </div>
+                                    <p class="text-muted">Oct. 14th 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- appartment 3 -->
+
+                <div class="col-md-4 col-lg-4">
+                    <div class="card bg-white p-2 appartment-box">
+                        <div class="card-img-top">
+                            <img src="./images/hotel-9.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-body">
+                            <p class="appartment-highlight">Appartment</p>
+                            <h4 class="appartment-title"> Apartment 3</h4>
+                            <p class="appartment-location"><img src="./images/location-marker.svg" alt="location-icon" class="img-fluid appartment-icon"> 255 Lorem road , Off ipsum avenue lagos</p>
+                            <div class="appartment-details d-flex flex-row justify-content-between">
+                                <p><img src="./images/bed.svg" alt="bed" class="img-fluid"> Beds: 4</p>
+                                <p><img src="./images/shower.svg" alt="bed" class="img-fluid"> Baths: 4</p>
+                                <p><img src="./images/zoom-in.svg" alt="bed" class="img-fluid appartment-details-icon"> Sq Ft: 4</p>
+                            </div>
+                            <!-- footer-for person -->
+                            <div class="card-footer appartment-footer">
+                                <div class="d-flex flex-row justify-content-between align-items-center">
+                                    <div>
+                                        <img src="./images/person2.jpg" alt="person" class="img-fluid rounded-circle appartment-footer-img">
+                                    </div>
+                                    <p class="text-muted">Oct. 13th 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- serach bar in the md-->
             <div class="row">
                 <div class="col-12">
                     <div class="search lux-shadow search-appartments">
@@ -330,81 +326,79 @@
                 </div>
             </div>
         </div>
+
     </section>
-    <section id="works" class="how-it-works">
+
+
+
+    <!-- why choose us -->
+    <section class="why">
         <div class="container">
-            <div class="row">
+            <div class="row text-left">
                 <div class="col-12 works-title">
-                    <h3>How it works?</h3>
-                    <p>In this space market-facing, yet UI work flows , or bake it in.<br>Red flag we need a recap by eod, cob or whatever comes<br>first agile at the end of the day. </p>
+                    <h3>Why Choose us</h3>
+                    <p>Lorem ipsum dolor sit amet. </p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="work-box animate">
-                        <div class="work-box-number">
-                            <p>01</p>
-                        </div>
-                        <div class="work-box-title">
-                            <p class="left">01</p>
-                            <p class="left">Find Your Location</p>
-                        </div>
-                        <div class="work-box-text">
-                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day. </p>
-                        </div>
-                        <div class="work-box-link">
-                            <a href="#">Find Location</a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="why-box animate">
+                        <div class="why-content my-3 p-2">
+                            <img src="./images/why-image.jpg" alt="why-image" class="img-fluid rounded-circle mx-auto why-image">
+                            <h4 class="why-title mt-3">
+                                Lorem, ipsum.
+                            </h4>
+                            <p class="why-sub-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum temporibus impedit odio nobis pariatur?
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="work-box animate">
-                        <div class="work-box-number">
-                            <p>02</p>
-                        </div>
-                        <div class="work-box-title">
-                            <p class="left">02</p>
-                            <p class="left">Find Appartment</p>
-                        </div>
-                        <div class="work-box-text">
-                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day. </p>
-                        </div>
-                        <div class="work-box-link">
-                            <a href="#">Find Location</a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="why-box animate">
+                        <div class="why-content my-3 p-2">
+                            <img src="./images/why-image.jpg" alt="why-image" class="img-fluid rounded-circle mx-auto why-image">
+                            <h4 class="why-title mt-3">
+                                Lorem, ipsum.
+                            </h4>
+                            <p class="why-sub-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum temporibus impedit odio nobis pariatur?
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="work-box animate">
-                        <div class="work-box-number">
-                            <p>03</p>
-                        </div>
-                        <div class="work-box-title">
-                            <p class="left">03</p>
-                            <p class="left">Make Contact</p>
-                        </div>
-                        <div class="work-box-text">
-                            <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we neef the day. </p>
-                        </div>
-                        <div class="work-box-link">
-                            <a href="#">Find Location</a>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="why-box animate">
+                        <div class="why-content my-3 p-2">
+                            <img src="./images/why-image.jpg" alt="why-image" class="img-fluid rounded-circle mx-auto why-image">
+                            <h4 class="why-title mt-3">
+                                Lorem, ipsum.
+                            </h4>
+                            <p class="why-sub-title">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat illum temporibus impedit odio nobis pariatur?
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Services Area -->
+    </section>
+
+
+
+    <!-- Services Area -->
+    <section class="services">
+        <div class="container">
             <div class="row work-services">
-                <div class="col-12 work-services-title">
+                <div class="col work-services-title">
                     <h3>Services</h3>
                     <p>In this space market-facing, yet UI work flows , or bake it in.<br>Red flag we need a first agile at the end of the day. </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-7">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 d-none d-md-block">
                     <div class="work-service-image">
                     </div>
                 </div>
-                <div class="col-12 col-md-5 work-service-info">
+                <div class="col-md-5 work-service-info ">
                     <h4>Renting</h4>
                     <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest prospects is like putting socks on
                         an octopus, yet due diligence</p>
@@ -420,89 +414,113 @@
             </div>
         </div>
     </section>
-    <!------------------------------------------------ AGENTS SECTION -->
-    <section id="agents" class="agents">
-        <div class="container">
-            <div class="row agents-services">
-                <div class="col-12 agents-title">
-                    <h3>Meet Our Agents</h3>
-                    <p>In this space market-facing, yet UI work flows , or bake it in.<br>Red flag we need a recap by eod, cob or whatever comes<br>first agile at the end of the day. </p>
+
+
+    <!-- testimonitals -->
+    <section class="testimonial text-white text-center">
+        <div class="testimonial-overlay">
+            <div class="container">
+                <h4 class="testimonial-title text-white text-center py-2 pt-5">Testimonials</h4>
+                <div class="row">
+                    <div class="col">
+                        <div class="slider">
+                            <div class="testimonial-content py-4">
+                                <div class="testimonial-img">
+                                    <img src="./images/person1.jpg" alt="" class="img-fluid rounded-circle mx-auto">
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="testimonial-info-main">Grace lime</p>
+                                    <p class="testimonial-info-sub">Head of Google in Nigeria</p>
+                                </div>
+                                <div class="testimonial-text mt-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, inventore?
+                                </div>
+                            </div>
+                            <div class="testimonial-content py-4">
+                                <div class="testimonial-img">
+                                    <img src="./images/person2.jpg" alt="" class="img-fluid rounded-circle mx-auto">
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="testimonial-info-main">Fish Watermelon</p>
+                                    <p class="testimonial-info-sub">Head of Pixa in Nigeria</p>
+                                </div>
+                                <div class="testimonial-text mt-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, inventore?
+                                </div>
+                            </div>
+                            <div class="testimonial-content py-4">
+                                <div class="testimonial-img">
+                                    <img src="./images/person3.jpg" alt="" class="img-fluid rounded-circle mx-auto">
+                                </div>
+                                <div class="testimonial-info">
+                                    <p class="testimonial-info-main">Bann Slice</p>
+                                    <p class="testimonial-info-sub">Head of figma in Nigeria</p>
+                                </div>
+                                <div class="testimonial-text mt-5">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, inventore?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------ AGENTS SECTION -->
+    <section id="agents" class="agents py-5">
+        <div class="container">
+            <div class="row agents-services">
+                <div class="col-md-5 agents-title">
+                    <h3>Meet Our Agents</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A error omnis nostrum dolorem nisi exercitationem dolores et tempore ut perferendis?</p>
+                </div>
+            </div>
+
             <div class="row">
-                <!-- Agent  -->
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Agent Image  -->
-                            <img src="images/agent.png" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Agent Title  -->
-                                <p>Agent</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left agent-name">
-                                    <!-- Agent name  -->
-                                    <p>Mr. Luke Skywalker</p>
-                                </div>
-                                <div class="agent-social right flex-center">
-                                    <a href="#"><img src="images/facebook.svg" alt=""></a>
-                                    <a href="#"><img src="images/twitter.svg" alt=""></a>
-                                    <a href="#"><img src="images/dribble.svg" alt=""></a>
+                <div class="col-md-4 col-lg-4 py-1">
+                    <div class="card">
+                        <div class="img-top"><img src="./images/agent-1.jpg" alt="agent pics" class="img-fluid agent-image"></div>
+                        <div class="card-body">
+                            <h4 class="card-title text-dark agent-title">Agent</h4>
+                            <div class="agent-info d-flex flex-row justify-content-between">
+                                <h3 class="agent-info-title">Mr Lorem Fish</h3>
+                                <div class="agent-social d-flex flex-row justify-content-between">
+                                    <img src="./images/facebook.svg" alt="facebook icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/twitter.svg" alt="twitter icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/dribble.svg" alt="dribble icon" class="img-fluid agent-social-icon">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Agent  -->
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Agent Image  -->
-                            <img src="images/agent.png" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Agent Title  -->
-                                <p>Agent</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left agent-name">
-                                    <!-- Agent name  -->
-                                    <p>Mr. Luke Skywalker</p>
-                                </div>
-                                <div class="agent-social right flex-center">
-                                    <a href="#"><img src="images/facebook.svg" alt=""></a>
-                                    <a href="#"><img src="images/twitter.svg" alt=""></a>
-                                    <a href="#"><img src="images/dribble.svg" alt=""></a>
+                <div class="col-md-4 col-lg-4 py-1">
+                    <div class="card">
+                        <div class="img-top"><img src="./images/agent-1.jpg" alt="agent pics" class="img-fluid agent-image"></div>
+                        <div class="card-body">
+                            <h4 class="card-title text-dark agent-title">Agent</h4>
+                            <div class="agent-info d-flex flex-row justify-content-between">
+                                <h3 class="agent-info-title">Mr Lorem Fish</h3>
+                                <div class="agent-social d-flex flex-row justify-content-between">
+                                    <img src="./images/facebook.svg" alt="facebook icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/twitter.svg" alt="twitter icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/dribble.svg" alt="dribble icon" class="img-fluid agent-social-icon">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Agent  -->
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="appartment-box">
-                        <div class="appartment-image">
-                            <!-- Agent Image  -->
-                            <img src="images/agent.png" alt="">
-                        </div>
-                        <div class="appartment-info">
-                            <div class="appartment-title">
-                                <!-- Agent Title  -->
-                                <p>Agent</p>
-                            </div>
-                            <div class="appartment-details">
-                                <div class="price left agent-name">
-                                    <!-- Agent name  -->
-                                    <p>Mr. Luke Skywalker</p>
-                                </div>
-                                <div class="agent-social right flex-center">
-                                    <a href="#"><img src="images/facebook.svg" alt=""></a>
-                                    <a href="#"><img src="images/twitter.svg" alt=""></a>
-                                    <a href="#"><img src="images/dribble.svg" alt=""></a>
+                <div class="col-md-4 col-lg-4 py-1">
+                    <div class="card">
+                        <div class="img-top"><img src="./images/agent-1.jpg" alt="agent pics" class="img-fluid agent-image"></div>
+                        <div class="card-body">
+                            <h4 class="card-title text-dark agent-title">Agent</h4>
+                            <div class="agent-info d-flex flex-row justify-content-between">
+                                <h3 class="agent-info-title">Mr Lorem Fish</h3>
+                                <div class="agent-social d-flex flex-row justify-content-between">
+                                    <img src="./images/facebook.svg" alt="facebook icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/twitter.svg" alt="twitter icon" class="img-fluid agent-social-icon">
+                                    <img src="./images/dribble.svg" alt="dribble icon" class="img-fluid agent-social-icon">
                                 </div>
                             </div>
                         </div>
@@ -512,6 +530,23 @@
         </div>
     </section>
     <!------------------------------------------------ ADD SECTION -->
+
+    <!-------------------------------------------AGENT ADVERT-->
+    <section class="agent-advert">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="agent-advert-text">
+                        <h3 class="agent-advert-text-title">Become a Real Estate Agent today</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tenetur.</p>
+                    </div>
+                    <div class="agent-advert-button">
+                        <button class="agent-advert-btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!------------------------------------------------ FOOTER SECTION -->
     <footer id="contact">
@@ -563,6 +598,11 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- bootstrap 4.3.1 -->
+    <script src="./js 4.3.1/jquery_3.3.1.min.js"></script>
+    <script src="./js 4.3.1/popper.min.js"></script>
+    <script src="./js 4.3.1/bootstrap.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Scripts Ends -->
 </body>

@@ -20,6 +20,12 @@ img {
 
 :root {
     --primary-color: #02edb5;
+    --overlay-color: rgba(0, 0, 0, 0.4);
+    --dark-overlay-color: rgba(0, 0, 0, 0.7);
+    --light-color: #fff;
+    --light-grey-color: #333333;
+    --dark-color: #222;
+    --title-size: 1.15rem;
 }
 
 html {
@@ -124,6 +130,10 @@ a:hover {
 }
 
 .light-bg {
+    background-color: #fff;
+}
+
+.bg-white {
     background-color: #fff;
 }
 
@@ -238,22 +248,20 @@ li {
 
 header {
     padding-bottom: 25px;
+    color: #fff;
 }
 
-header nav {
+#top-nav {
     width: 100%;
     height: 95px;
     position: fixed;
     z-index: 9999;
     background-color: #fff;
+    /* border-bottom: 2px solid var(--primary-color); */
 }
 
-.small-nav {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#top-nav a {
+    color: var(--light-color);
 }
 
 .logo {
@@ -293,7 +301,7 @@ header nav {
     padding-right: 20px;
 }
 
-.getting-started {
+.Register-with-us {
     width: 60%;
     height: 95px;
     display: flex;
@@ -322,6 +330,32 @@ header nav {
     color: #1F373D;
 }
 
+.secondary-btn {
+    width: 100%;
+    background-color: var(--light-color);
+    padding: 10px 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    border: 1px solid var(--light-color);
+    transition: 0.4s all;
+    color: var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: transparent;
+    color: var(--light-color) !important;
+    border: 1px solid var(--light-color);
+}
+
+.secondary-text-color {
+    color: var(--primary-color) !important;
+}
+
+.secondary-btn:hover .secondary-text-color {
+    color: var(--light-color) !important;
+}
+
 .page-menu li {
     padding: 8px;
 }
@@ -334,8 +368,8 @@ header nav {
 /*-- Hero Area --*/
 
 .hero {
-    max-width: 87%;
-    height: 700px;
+    max-width: 100%;
+    height: 90vh;
     position: relative;
 }
 
@@ -348,32 +382,26 @@ header nav {
 }
 
 .hero-image {
-    width: 88%;
-    height: 630px;
-    float: right;
+    width: 100%;
+    height: 90vh;
     background-image: url('../images/hotel-4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    right: -60px;
 }
 
-.hero-image-info {
+.hero-image-overlay {
+    background-color: var(--overlay-color);
     position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.hero-image-info p {
-    font-weight: 700;
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 .hero-main-text {
-    color: #000000;
+    color: var(--light-color);
 }
 
 .info {
@@ -423,13 +451,6 @@ header nav {
     color: #919EB1;
 }
 
-.hero-wrapper {
-    position: relative;
-    width: 100%;
-    height: 725px;
-    padding-top: 95px;
-}
-
 .slide-down {
     width: 20px;
     height: 65px;
@@ -450,13 +471,8 @@ header nav {
 -------------------------------------------------------------*/
 
 .statistic {
-    width: 100%;
-    min-height: 650px;
-    padding: 145px 0px 80px 0px;
-}
-
-.statistic h3 {
-    padding: 15px 0px 50px 0px;
+    width: 80%;
+    margin: auto;
 }
 
 .statistic p {
@@ -464,28 +480,24 @@ header nav {
 }
 
 .statistic-box {
-    background-color: #F6F5F4;
+    background-color: var(--primary-color);
     width: 36%;
-    height: 200px;
+    height: 150px;
     margin: 0px 0px 30px 30px;
     padding-top: 40px;
-    float: right;
 }
 
-.statistic-box p:nth-child(1) {
-    font-size: 40px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 0px;
-    padding: 0px;
+.statistic-box h3 {
+    color: var(--light-color);
 }
 
-.statistic-box p:nth-child(2) {
-    font-size: 14px;
-    font-weight: 700;
-    color: #1F373D;
-    margin: 0px;
-    padding: 0px;
+.statistic-box:hover {
+    background-color: var(--light-color);
+    box-shadow: 0px 10px 15px 0px rgba(29, 31, 36, 0.1);
+}
+
+.statistic-box:hover h3 {
+    color: var(--dark-color);
 }
 
 
@@ -495,91 +507,61 @@ header nav {
 
 .appartments {
     background-color: #F6F5F4;
-    padding: 60px 0px 70px 0px;
+    padding: 40px 0px;
 }
 
 .appartments h2 {
     margin-bottom: 35px;
 }
 
-.appartment-box {
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
-    -moz-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
-    box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
-    width: 100%;
-    height: 500px;
-    max-width: 350px;
-    margin: 0 auto;
-    margin-top: 35px;
+.appartments img {
+    display: inline-block;
+    max-width: 100%;
 }
 
-.appartment-image {
-    height: 76%;
+.appartment-highlight {
+    font-size: 80%;
+    color: var(--primary-color);
 }
 
-.appartment-image img {
-    width: 100%;
-    height: 100%;
+.appartment-icon {
+    filter: invert(50%);
 }
 
-.appartment-info {
-    height: 24%;
-    background-color: #fff;
-    padding: 25px 20px;
+.appartment-location {
+    font-size: 0.9rem;
 }
 
 .appartment-title {
-    width: 100%;
-    height: 50%;
-}
-
-.appartment-title p {
-    font-size: 15px;
+    font-size: var(--title-size);
     font-weight: 700;
-    letter-spacing: 0px;
-    line-height: 20px;
+    color: var(--dark-color);
 }
 
-.appartment-details {
-    width: 100%;
-    height: 50%;
-}
-
-.price {
-    width: 50%;
-    height: 100%;
-}
-
-.price p {
-    font-size: 18px;
-    color: var(--primary-color);
-    font-weight: 700;
-}
-
-.bathrooms {
-    width: 25%;
-    height: 100%;
-}
-
-.bathrooms p {
-    padding: 15px 0px 0px 10px;
-    font-size: 13px;
-    color: #919EB1;
-}
-
-.bedrooms {
-    width: 25%;
-    height: 100%
-}
-
-.bedrooms p {
-    padding: 15px 0px 0px 10px;
-    font-size: 13px;
-    color: #919EB1;
+.appartment-details p {
+    font-size: 0.8rem;
 }
 
 .search-appartments {
     position: inherit;
+}
+
+.appartment-details-icon {
+    width: 15px;
+}
+
+.appartment-footer p {
+    font-size: 0.6rem;
+}
+
+.appartment-box:hover {
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
+    box-shadow: 0px 3px 8px 0px rgba(15, 29, 32, 0.15);
+}
+
+.appartment-footer-img {
+    width: 45px;
 }
 
 .search-all-btn {
@@ -590,21 +572,15 @@ header nav {
 
 
 /*-----------------------------------------------------------
-    6. HOW IT WORKS
+    Why Choose us
 -------------------------------------------------------------*/
 
-.how-it-works {
+.why {
     background-color: #fff;
     padding: 60px 0px 20px 0px;
 }
 
-.works-title p {
-    font-size: 13px;
-    margin-top: 20px;
-    line-height: 1.9rem;
-}
-
-.work-box {
+.why-box {
     width: 100%;
     height: 372px;
     max-width: 345px;
@@ -616,71 +592,43 @@ header nav {
     box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
 }
 
-.work-box-number {
-    width: 100%;
-    height: 35%;
-    position: relative;
-}
-
-.work-box-number p {
-    position: absolute;
-    top: -124px;
-    left: -45px;
-    font-size: 160px;
-    color: #1F373D;
-    font-weight: 700;
-}
-
-.work-box-title {
-    width: 100%;
-    height: 15%;
-    padding: 0px 20px;
-}
-
-.work-box-title p {
-    font-weight: 700;
-    color: #1F373D;
-}
-
-.work-box-title p:nth-child(1) {
-    margin-right: 15px;
-}
-
-.work-box-text {
-    width: 100%;
-    height: 30%;
-    padding: 0px 20px 0px 55px;
-}
-
-.work-box-text p {
-    color: #1F373D;
-    font-size: 13px;
-    line-height: 2rem;
-    font-weight: 400;
-}
-
-.work-box-link {
-    width: 100%;
-    height: 20%;
-    padding: 0px 10px 0px 55px;
-}
-
-.work-box-link a {
-    color: #1F373D;
-    font-size: 13px;
-    text-decoration-line: underline;
-    font-weight: 700;
-}
-
-.work-box:hover {
+.why-box:hover {
     background-color: var(--primary-color);
+}
+
+.why-box:hover .why-title {
+    color: #fff !important;
+}
+
+.why-box:hover .why-image {
+    filter: grayscale(100%);
+}
+
+.why-content {
+    width: inherit;
+}
+
+.why-image {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding-bottom: 0.5rem;
+}
+
+.why-title {
+    font-size: var(--title-size);
+    color: var(--dark-color);
+}
+
+.why-sub-title {
+    font-size: 0.85rem;
 }
 
 
 /* Work Service */
 
 .work-services {
-    padding: 90px 0px 65px 0px;
+    padding: 90px 0px 20px 0px;
 }
 
 .work-services-title p {
@@ -690,14 +638,12 @@ header nav {
 .work-service-image {
     background-color: aqua;
     width: 100%;
-    height: 630px;
-    display: block;
+    height: 600px;
+    display: inline-block;
     background-image: url('../images/hotel-16.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    left: -105px;
 }
 
 .work-service-info p {
@@ -707,12 +653,58 @@ header nav {
 
 
 /*-----------------------------------------------------------
+   TESTIMONIALS
+-------------------------------------------------------------*/
+
+.testimonial {
+    min-height: 350px;
+    background: url(../images/hotel-13.jpg) no-repeat center center/cover fixed;
+    position: relative;
+}
+
+.testimonial-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-overlay-color);
+}
+
+.testimonial-img img {
+    width: 70px;
+    display: block;
+    border: 3px solid rgba(255, 255, 255, 0.308);
+}
+
+.testimonial-info-main {
+    font-weight: bolder;
+}
+
+.testimonial-info-sub {
+    margin: -1.3rem;
+    font-size: 0.8rem;
+}
+
+
+/*-----------------------------------------------------------
     7. AGENTS
 -------------------------------------------------------------*/
+
+.agent {
+    display: block;
+    max-width: 100%;
+    ;
+}
 
 .agents {
     background-color: #F6F5F4;
     padding-bottom: 90px;
+}
+
+.agent-title {
+    font-size: var(--title-size);
+    color: var(--dark-color);
 }
 
 .agents-title p {
@@ -721,31 +713,52 @@ header nav {
     line-height: 1.9rem;
 }
 
-.agent-name p {
-    font-size: 15px;
+.agent-info-title {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 700;
 }
 
-.agent-social a {
-    position: relative;
-    top: -5px;
+.agent-social-icon {
+    padding: 0 0.4rem;
 }
 
-.agent-social a {
-    padding: 5px;
+.agent-image {
+    width: 100%;
+    display: inline-block;
 }
 
-.agent-social a:nth-child(2) {
-    margin: 0px 15px;
+
+/* agent Adevrt */
+
+.agent-advert {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
 }
 
-.appartment-info {
-    height: 24%;
-    background-color: #fff;
-    padding: 25px 20px;
+.agent-advert .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.agents-services {
-    padding: 90px 0px 35px 0px;
+.agent-advert-text-title {
+    font-size: 1.2rem;
+}
+
+.agent-advert-btn {
+    border: none;
+    background-color: #06b189;
+    color: var(--light-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.agent-advert-btn:hover {
+    border: 2px solid #fff;
+    background-color: transparent;
 }
 
 
@@ -826,7 +839,7 @@ header nav {
 -------------------------------------------------------------*/
 
 footer {
-    background-color: #1F373D;
+    background-color: var(--dark-color);
     width: 100%;
     color: #fff !important;
     padding: 65px 0px;
@@ -923,6 +936,7 @@ footer h6 {
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         transition: all 0.4s ease-in-out;
+        background-color: var(--primary-color);
     }
     .page-menu {
         width: 100%;
@@ -931,6 +945,7 @@ footer h6 {
         float: none;
         display: flex;
         flex-direction: column;
+        background-color: var(--primary-color);
     }
     .page-menu li {
         font-size: 15pt;
@@ -946,13 +961,14 @@ footer h6 {
         text-align: center;
         padding-bottom: 5vh;
     }
-    .join-us {
+    .Login {
         width: 100%;
         text-align: center;
         height: 0px;
         margin-top: 30px;
+        padding-right: 1rem;
     }
-    .join-us li {
+    .Login li {
         width: 100%;
         text-align: center;
     }
@@ -964,8 +980,8 @@ footer h6 {
     }
     .menu-button span {
         width: 40px;
-        height: 5px;
-        background-color: #1F373D;
+        height: 4px;
+        background-color: var(--light-color);
         display: block;
         margin: 6px 0px;
     }
@@ -978,16 +994,6 @@ footer h6 {
         font-size: 13px;
         border: 1px solid var(--primary-color);
         transition: 0.4s all;
-    }
-    .statistic-box:nth-child(1) {
-        float: left;
-        margin-top: 50px;
-    }
-    .statistic-box:nth-child(2) {
-        margin-top: 50px;
-    }
-    .statistic-box:nth-child(3) {
-        float: left;
     }
     .search-appartments {
         width: 300px;
@@ -1027,6 +1033,9 @@ footer h6 {
     }
     .footer-logo p {
         float: right;
+    }
+    .agent-advert .col {
+        display: block;
     }
 }
 
