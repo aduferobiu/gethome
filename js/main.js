@@ -26,6 +26,8 @@ $(function() {
         }
     });
 });
+
+
 //Toogle Mobile Menu
 $(".menu-button").click(function() {
     $('.menu').toggleClass('slide');
