@@ -98,3 +98,21 @@ $('.slider').slick({
     slideToShow: 1,
     slideToScroll: 1
 });
+
+
+//map
+function initMap() {
+    var lagos = {
+        lat: 6.538611,
+        lng: 3.382306
+    };
+    var map = new google.maps.Map(
+        document.getElementById('map'), {
+            zoom: 4,
+            center: Lagos
+        });
+    var marker = new google.maps.Marker({
+        position: Lagos,
+        map: map
+    });
+}

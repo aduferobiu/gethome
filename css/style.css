@@ -1,6 +1,9 @@
 /* color:02edb5 */
 
 
+/* #60708c */
+
+
 /*-----------------------------------------------------------
     1. General Styles 
 -------------------------------------------------------------*/
@@ -257,11 +260,24 @@ header {
     height: 95px;
     position: fixed;
     z-index: 9999;
-    background-color: #fff;
+    background-color: transparent;
     /* border-bottom: 2px solid var(--primary-color); */
 }
 
 #top-nav a {
+    color: var(--light-color);
+}
+
+#top-nav-sub {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--primary-color);
+    /* border-bottom: 2px solid var(--primary-color); */
+}
+
+#top-nav-sub a {
     color: var(--light-color);
 }
 
@@ -556,9 +572,9 @@ header {
 }
 
 .appartment-box:hover {
-    -webkit-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
-    -moz-box-shadow: 0px 2px 8px 0px rgba(24, 49, 56, 0.15);
-    box-shadow: 0px 3px 8px 0px rgba(15, 29, 32, 0.15);
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(24, 49, 56, 0.15);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(24, 49, 56, 0.15);
+    box-shadow: 0px 5px 20px 0px rgba(15, 29, 32, 0.473);
 }
 
 .appartment-footer-img {
@@ -832,6 +848,99 @@ header {
 
 .add3-info p {
     padding-bottom: 10px;
+}
+
+
+/* -------------------------------------------------------
+CONTACT PAGE STYLING
+---------------------------------------------------------*/
+
+.contact-header {
+    height: 375px;
+    background: url('../images/hotel-4.jpg') no-repeat center center/cover;
+    position: relative;
+    color: var(--light-color) !important;
+}
+
+.contact-header a {
+    color: var(--light-color) !important;
+    z-index: 5;
+}
+
+.contact-header-info {
+    margin-top: 40%;
+    transform: translateY(-90%);
+    color: var(--light-color) !important;
+}
+
+.contact-header-info h4 {
+    color: var(--light-color) !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.contact-header-info h3 {
+    color: var(--light-color);
+}
+
+.contact-header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-overlay-color);
+}
+
+.contact {
+    background-color: #F6F5F4;
+}
+
+.contact-us-info h4 {
+    font-size: 1rem;
+}
+
+.contact-us-info p {
+    font-size: 00.9rem;
+}
+
+.contact-message h4,
+.contact-us-title {
+    font-size: var(--title-size);
+}
+
+.contact-message p {
+    font-size: 0.9rem;
+}
+
+.input-section input::placeholder,
+.input-section textarea::placeholder {
+    font-size: 0.85rem;
+}
+
+.btn-edit {
+    border: none;
+    background-color: var(--primary-color) !important;
+    color: var(--dark-color);
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-edit:hover {
+    background: transparent !important;
+    border: 2px solid var(--primary-color);
+}
+
+.social-icon-bar {
+    background-color: #F6F5F4;
+    width: 40px;
+    text-align: center;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
 }
 
 
