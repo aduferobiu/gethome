@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="logo left">
                     <!-- Logo -->
-                    <a href="#home"><img src="./images/GetHome logo_white logo.png" alt="logo" style="max-width: 170px;height: auto;"></a>
+                    <a href="index.html"><img src="./images/GetHome logo_white logo.png" alt="logo" style="max-width: 170px;height: auto;"></a>
                 </div>
                 <div class="menu-button hide right pointer">
                     <span></span>
@@ -41,7 +41,7 @@
                         <li><a href="#appartments">Appartments</a></li>
                         <li><a href="blog1.html">Blog</a></li>
                         <li><a href="#agents">Agents</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </div>
                     <div class="registration flex-center">
                         <div class="Login">
@@ -50,7 +50,7 @@
                         </div>
                         <div class="Register-with-us">
                             <!-- Get Started Button -->
-                            <li class="secondary-btn pointer text-center animate"><a class="secondary-text-color" href="register.html">Register</a></li>
+                            <li class="secondary-btn pointer text-center animate"><a class="secondary-text-color" href="#">Register</a></li>
                         </div>
                     </div>
                 </div>
@@ -59,97 +59,57 @@
     </header>
 
 
-    <!---------------------------------------------Contact header-->
-    <div class="contact-header">
-        <div class="contact-header-overlay">
+    <!---------------------------------------------register header-->
+    <div class="register-header">
+        <div class="register-header-overlay">
             <div class="container">
-                <div class="contact-header-info">
-                    <h4><a href="index.html">Home</a> / <a href="#">Contact Us</a></h4>
-                    <h3>Contact Us</h3>
+                <div class="register-header-info">
+                    <h4><a href="index.html">Home</a> / <a href="#">Register</a></h4>
+                    <h3>Register</h3>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <!---------------------------------------------Contact section -->
-    <section class="contact">
+    <!---------------------------------------------register section -->
+    <section class="register">
         <div class="container">
             <div class="row py-5">
-                <div class="col-md-8 col-lg-8">
-                    <div class="bg-white p-4 rounded">
-                        <div class="contact-message">
-                            <h4>Send Us a Message</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error in sunt nihil quae sed possimus!</p>
+                <div class="col-md-6 col-lg-6 mx-auto">
+                    <div class="bg-white p-4 rounded p-4">
+                        <div class="register-title text-center">
+                            <h4>Register to start living</h4>
+                            <p>Have an Account? <a href="login.html" class="text-link-custom">Login</a></p>
                         </div>
-                        <div class="input-section">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6 py-2">
-                                        <input type="text" class="form-control p-2" placeholder="Name">
-                                    </div>
-                                    <div class="col-md-6 py-2">
-                                        <input type="email" class="form-control p-2" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 py-2">
-                                        <input type="tel" class="form-control p-2" placeholder="Phone-Number">
-                                    </div>
-                                    <div class="col-md-6 py-2">
-                                        <input type="text" class="form-control p-2" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col py-2">
-                                        <textarea class="form-control" cols="10" rows="8" placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <button class="btn-edit" type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 mt-md-0 mt-sm-3">
-                    <div class="bg-white p-4 contact-us-info">
-                        <div>
-                            <h4 class="contact-us-title">Contact us</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, libero?</p>
-                        </div>
-                        <div>
-                            <h4>Address</h4>
-                            <p>@403, Afred Rewani Street, Lekki.</p>
-                        </div>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>(234) 708 9376 649</p>
-                        </div>
-                        <div>
-                            <h4>Mail</h4>
-                            <p>Admin@gethome.com</p>
-                        </div>
-                        <div>
-                            <h4>Follow us on:</h4>
-                            <div class="d-flex flex-row">
-                                <div class="social-icon-bar p-2 mr-2">
-                                    <img src="./images/facebook.svg" alt="facebook" class="img-fluid">
-                                </div>
-                                <div class="social-icon-bar p-2 mr-2">
-                                    <img src="./images/twitter.svg" alt="facebook" class="img-fluid">
-                                </div>
-                                <div class="social-icon-bar p-2">
-                                    <img src="./images/dribble.svg" alt="facebook" class="img-fluid">
-                                </div>
+                        <form class="mt-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+                            <button class="btn btn-block btn-edit" type="submit">Register</button>
+                        </form>
+                        <p class="d-block text-center font-weight-bold py-2">OR</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button class="register-fb btn btn-block align-self-center text-white"><img src="./images/facebook.svg" alt="" class="img-fluid">    Facebook</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="register-gp btn btn-block align-self-center text-white"><img src="./images/033-google-plus.png" alt="" class="img-fluid">    Google</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-
-    <div id="map">
-    </div>
 
     <!-------------------------------------------AGENT ADVERT-->
     <section class="agent-advert">
